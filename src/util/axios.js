@@ -10,8 +10,8 @@ export const _axios = axios.create({
 });
 
 console.log(
-  "process.env, REACT_APP_SEAT_JSON_PATH:: ",
-  process.env,
-  REACT_APP_SEAT_JSON_PATH,
-  axios.defaults
+    "process.env, REACT_APP_SEAT_JSON_PATH:: ",
+    process.env,
+    REACT_APP_SEAT_JSON_PATH,
+    axios.defaults
 );

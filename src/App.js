@@ -1,11 +1,15 @@
-import { Axios } from "./util/api";
-import Seats from "./pages/Seats";
+import { ThemeProvider } from "@mui/material/styles";
+
+import Position from "./pages/Position";
+import useSystemTheme from "./hooks/useSystemTheme";
 
 function App() {
+  const { theme } = useSystemTheme();
+
   return (
-    <div className="App">
-      <Seats />
-    </div>
+    <ThemeProvider theme={theme}>
+        <Position />
+    </ThemeProvider>
   );
 }
 
